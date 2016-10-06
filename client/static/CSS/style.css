@@ -1,0 +1,135 @@
+#login_form {
+	width: 500px;
+	margin: 30px auto;
+}
+
+#login_form label, #new_q_container label, #new_a_container label{
+	margin-top: 5%;
+	display: block;
+}
+
+#login_form label input {
+	width: 200px;
+}
+
+.labels {
+	width: 100px;
+	display: inline-block;
+}
+
+#login_btn {
+	display: block;
+	margin: 20px 0px 0px 60%;
+}
+
+#index_container, #new_q_container, #new_a_container, #show_container {
+	width: 800px;
+	margin: 10px auto;
+}
+
+#index_container h1 {
+	display: inline-block;
+}
+
+#index_container input {
+	width: 200px;
+}
+
+#logout {
+	margin-left: 80%;
+}
+
+#add_Q {
+	display: block;
+}
+
+#search {
+	margin-left: 54%;
+}
+
+#new_q_container .labels, #new_q_container div, #new_a_container .labels, #new_a_container div {
+	vertical-align: top;
+}
+
+#desc_block {
+	display: inline-block;
+}
+
+#desc_block span {
+	display: block;
+}
+
+textarea {
+	width: 300px;
+	height: 80px;
+}
+
+#cancel {
+	margin: 10px 10px 0px 36%;
+}
+
+.errors {
+	background-color: red;
+	color: white;
+	padding: 10px;
+	outline: 1px solid black;
+	width: 350px;
+	margin: 5px;
+	text-align: center;
+	font-size: 120%;
+	display: inline-block;
+}
+
+.error_container {
+	width: 800px;
+	margin: 0px auto;
+}
+
+table {
+	outline: 1px solid black;
+	margin: 20px auto;
+}
+
+table thead {
+	outline: 1px solid black;
+	background-color: lightgrey;
+}
+
+table th {
+	padding: 10px;
+}
+
+#home {
+	padding-right: 10px;
+	border-right: 1px solid black;
+}
+
+#back {
+	padding-left: 10px;
+}
+
+.answers {
+	margin-bottom: 10px;
+}
+
+.ans_left, .ans_right {
+	display: inline-block;
+}
+
+.ans_left p {
+	margin: 0px; 
+	width: 500px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.ans_right {
+	vertical-align: top;
+}
+
+.ans_right p {
+	display: inline-block;
+	margin-right: 10px;
+}

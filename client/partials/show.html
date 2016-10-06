@@ -1,0 +1,18 @@
+<div id="show_container">
+	<a href="#/" id="home">Home</a>
+	<a href="#/question/{{ question._id }}/new_answer" id="back">Answer this Question</a>
+	<a href="" ng-click="logout()" id="logout">Logout</a>
+	<h1>{{question.question}}</h1>
+	<p>{{question.description}}</p>
+	<div ng-repeat="answer in answers | orderBy:'-likes'" class="answers">
+		<div class="ans_left">
+			<p>{{answer.name}}:</p>
+			<p class="bold">{{answer.answer}}</p>
+			<p>{{answer.detail}}</p>
+		</div>
+		<div class="ans_right">
+			<p>{{answer.likes}} likes</p>
+			<input type="submit" value="Like!" ng-click="like(answer._id)">
+		</div>
+	</div>
+</div>

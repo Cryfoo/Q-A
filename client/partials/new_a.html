@@ -1,0 +1,25 @@
+<div id="new_a_container">
+	<a href="#/" id="home">Home</a>
+	<a href="#/question/{{ question._id }}" id="back">Go Back to Question</a>
+	<a href="" ng-click="logout()" id="logout">Logout</a>
+	<div ng-show="errors" class="error_container">
+		<p ng-repeat="error in errors" class="errors">{{error.message}}</p>
+	</div>
+	<h1>{{question.question}}</h1>
+	<p>{{question.description}}</p>
+	<form>
+		<label>
+			<span class="labels">Your Answer</span>
+			<textarea ng-model="answer.answer"></textarea>
+		</label>
+		<label>
+			<div id="desc_block">
+				<span class="labels">Supporting details for your answer</span>
+				<span class="labels" id="optional">(optional)</span>
+			</div>
+			<textarea ng-model="answer.detail"></textarea>
+		</label>
+		<input type="submit" value="Cancel" ng-click="cancel()" id="cancel">
+		<input type="submit" value="Submit" ng-click="create()">
+	</form>
+</div>

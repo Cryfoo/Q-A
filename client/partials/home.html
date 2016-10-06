@@ -1,0 +1,26 @@
+<div id="index_container">
+	<h1>Hi {{ user.name }}!</h1>
+	<a href="" ng-click="logout()" id="logout">Logout</a>
+	<a href="#/new_question" id="add_Q">Add a Question</a>
+	<span class="labels" id="search">Search:</span>
+	<input type="text" ng-model="filter">
+	<table id="q_table" ng-show="questions">
+		<thead>
+			<tr>
+				<th>Question</th>
+				<th>Answers</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="question in questions | filter:filter">
+				<th>{{question.question}}</th>
+				<th>{{question.answers.length}}</th>
+				<th>
+					<a href="#/question/{{ question._id }}">Show</a>
+					<a href="#/question/{{ question._id }}/new_answer" id="back">Answer</a>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+</div>

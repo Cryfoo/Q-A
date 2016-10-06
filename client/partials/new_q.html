@@ -1,0 +1,23 @@
+<div id="new_q_container">	
+	<a href="#/">Home</a>
+	<a href="" ng-click="logout()" id="logout">Logout</a>
+	<div ng-show="errors" class="error_container">
+		<p ng-repeat="error in errors" class="errors">{{error.message}}</p>
+	</div>
+	<h1>New Question</h1>
+	<form>
+		<label>
+			<span class="labels">Question</span>
+			<textarea ng-model="question.question"></textarea>
+		</label>
+		<label>
+			<div id="desc_block">
+				<span class="labels">Description</span>
+				<span class="labels" id="optional">(optional)</span>
+			</div>
+			<textarea ng-model="question.description"></textarea>
+		</label>
+		<input type="submit" value="Cancel" ng-click="cancel()" id="cancel">
+		<input type="submit" value="Submit" ng-click="create()">
+	</form>
+</div>
