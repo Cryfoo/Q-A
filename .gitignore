@@ -1,0 +1,6 @@
+# Ignore files and folders
+
+/Wireframe.png
+/Q&A.zip
+/bower_components/*
+/node_modules/*
